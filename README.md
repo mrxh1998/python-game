@@ -1,3 +1,5 @@
+#启动方式
+直接运行magic_tower文件即可
 # python-game
 python game magic_tower
 用python的pygame模块做的一个小游戏
