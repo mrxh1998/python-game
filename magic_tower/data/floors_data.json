@@ -1,0 +1,504 @@
+{
+	"start": 0,
+	"location": [11, 10],
+	"floors": [
+	{
+		"name": "start",
+		"bgm":"bgm0",
+		"floor": 0,
+		"scene": [
+			[1, 2, 2 ,2 ,2, {"o_type":"上楼梯","goto":1,"img":4, "location":[11,10]}, 2, 2, 2, 2,1], 
+			[1, 2, 2 ,2, 2,0 ,2 ,2 ,2 ,2,1], 
+			[1, 2, 2 ,2, 2,0 ,2 ,2 ,2 ,2,1], 
+			[1, 2, 2 ,2, 2,0 ,2 ,2 ,2 ,2,1], 
+			[1, 2, 2 ,2, 2,0 ,2 ,2 ,2 ,2,1], 
+			[1, 2, 2 ,2, 2,0 ,2 ,2 ,2 ,2,1], 
+			[1, 1, 2 ,2, 2,0 ,2 ,2 ,2 ,1,1],  
+			[1, 1, 1 ,1, 1,0 ,1 ,1 ,1 ,1,1],  
+			[3, 1, 3, 1, 0,{"o_type": "NPC","name":"仙女","npc_type":2,"program":1},0,1,3,1,3], 
+			[3, 3, 3 ,3, 3,0 ,3 ,3 ,3 ,3,3], 
+			[3, 3, 3 ,3, 3,0 ,3 ,3 ,3 ,3,3]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true,
+			"from_lower": [7,13]
+		}
+	},
+	{
+		"floor": 1,
+		"bgm":"bgm1",
+		"scene": [
+			[ {"o_type":"上楼梯","goto":2,"img":4, "location":[6,2]}, 0,{"o_type":"钥匙","color":"y_key"} , {"o_type":"monster","name":"绿色史莱姆"}, {"o_type":"monster","name":"红色史莱姆"}, {"o_type":"monster","name":"绿色史莱姆"}, 0,0,0,0,0], 
+			[1, 1, 1 ,1, 1,1 ,1 ,1 ,1 ,1,0], 
+			[{"o_type":"宝物","name":"红药"}, 0, {"o_type":"monster","name":"骷髅人"}, {"o_type":"door","color":"yellow"}, 0,1 ,{"o_type":"宝物","name":"红药"} ,{"o_type":"钥匙","color":"y_key"} ,{"o_type":"宝物","name":"红药"} ,1,0], 
+			[{"o_type":"钥匙","color":"y_key"}, {"o_type":"monster","name":"骷髅人"}, {"o_type":"宝物","name":"红宝石"} ,1, 0,1,{"o_type":"宝物","name":"红药"} ,{"o_type":"钥匙","color":"y_key"} ,{"o_type":"宝物","name":"红药"} ,1,0], 
+			[1, {"o_type":"door","color":"yellow"}, 1 ,1, 0,1 ,1 ,1 ,{"o_type":"monster","name":"黑色史莱姆"} ,1,0], 
+			[{"o_type":"钥匙","color":"y_key"}, {"o_type":"monster","name":"骷髅士兵"}, 0 ,1, 0,{"o_type":"door","color":"yellow"} ,{"o_type":"monster","name":"初级法师"} ,{"o_type":"monster","name":"绿色史莱姆"} ,{"o_type":"monster","name":"小蝙蝠"} ,1,0], 
+			[ {"o_type":"宝物","name":"蓝宝石"}, 0, {"o_type":"钥匙","color":"b_key"} ,1, 0,1 ,1 ,1 ,1 ,1,0],  
+			[1, {"o_type":"door","color":"yellow"}, 1 ,1, 0,0 ,0 ,0 ,0 ,0,0],  
+			[0,  {"o_type":"monster","name":"骷髅士兵"}, 0, 1, 1,{"o_type":"door","color":"red"},1,1,1,{"o_type":"door","color":"yellow"},1], 
+			[{"o_type":"宝物","name":"红药"}, {"o_type":"宝物","name":"蓝药"}, {"o_type":"钥匙","color":"y_key"} ,1, {"o_type":"钥匙","color":"r_key"},0 ,0 ,1 ,{"o_type":"钥匙","color":"y_key"} ,{"o_type":"monster","name":"兽面人"}, {"o_type":"钥匙","color":"b_key"}], 
+			[{"o_type":"宝物","name":"红药"}, {"o_type":"宝物","name":"怪物数值书"}, {"o_type":"钥匙","color":"y_key"} ,1, 0,{"o_type":"下楼梯","goto":0,"img":4, "location":[11,2]} ,0 ,1 ,{"o_type":"钥匙","color":"y_key"} ,{"o_type":"钥匙","color":"y_key"},{"o_type":"钥匙","color":"y_key"}]
+		],
+		"config": {
+				"allow_teleport_to": true,
+				"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 2,
+		"bgm":"bgm1",
+		"scene": [
+			[{"o_type":"下楼梯","goto":1,"location":[7,1]}, 1, 0 , {"o_type":"monster","name":"金队长"},0, 1, {"o_type":"宝物","name":"红宝石"}, {"o_type":"宝物","name":"蓝宝石"}, {"o_type":"钥匙","color":"y_key"}, {"o_type":"钥匙","color":"r_key"},1], 
+			[0, 1, {"o_type":"宝物","name":"蓝宝石"} ,1, {"o_type":"宝物","name":"蓝药"},1 ,{"o_type":"宝物","name":"红宝石"}, {"o_type":"宝物","name":"蓝宝石"}, {"o_type":"钥匙","color":"y_key"}, {"o_type":"钥匙","color":"b_key"},1], 
+			[0, 1, {"o_type":"钥匙","color":"y_key"} ,1, {"o_type":"钥匙","color":"y_key"},1 ,{"o_type":"宝物","name":"红宝石"}, {"o_type":"宝物","name":"蓝宝石"}, {"o_type":"钥匙","color":"y_key"}, {"o_type":"monster","name":"金卫士"},1], 
+			[0, 1, {"o_type":"钥匙","color":"y_key"} ,1, {"o_type":"钥匙","color":"y_key"},1  ,1 ,1 ,1,{"o_type":"door","color":"yellow"},1], 
+			[0, 1, 0 ,1, 0,0 ,0 , {"o_type":"door","color":"yellow"},0 ,0,1], 
+			[0, 1, {"o_type":"door","color":"yellow"} ,1, 1,{"o_type":"door","color":"yellow"} ,1 ,1 ,{"o_type":"door","color":"yellow"} ,1,1], 
+			[0, {"o_type":"door","color":"special"}, 0 ,0, 0,0 ,1 ,0, {"o_type":"monster","name":"金卫士"},0,1],  
+			[0, 1, {"o_type":"door","color":"yellow"} ,1, 1,{"o_type":"door","color":"blue"} ,1 ,{"o_type":"栅栏","flag":1} ,1 ,{"o_type":"栅栏","flag":1},1],  
+			[0, 1, {"o_type":"钥匙","color":"y_key"} ,1, {"o_type":"宝物","name":"蓝药"}, {"o_type":"宝物","name":"红药"} ,1 ,0 ,1 ,0,1],
+                                                [0, 1, {"o_type":"钥匙","color":"y_key"} ,1, {"o_type":"宝物","name":"蓝药"}, {"o_type":"宝物","name":"红药"} ,1 ,0 ,1 ,0,1],
+			[{"o_type":"上楼梯","goto":3,"location":[7,11]}, 1, {"o_type":"宝物","name":"红宝石"} ,1,{"o_type":"宝物","name":"蓝药"}, {"o_type":"宝物","name":"红药"},1 ,{"o_type":"NPC","id":1,"name":"蓝袍老人"} ,1 ,{"o_type":"NPC","id":1,"name":"红袍老人"} ,1]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 3,
+		"bgm":"bgm1",
+		"scene": [
+			[ {"o_type":"宝物","name":"铁剑"},{"o_type":"monster","name":"红色史莱姆"} ,  {"o_type":"钥匙","color":"y_key"} ,1 ,{"o_type":"商店","name":"初级商店","flag":1}, {"o_type":"商店","name":"初级商店","flag":2}, {"o_type":"商店","name":"初级商店","flag":3}, 1, 1, 1,1], 
+			[{"o_type":"monster","name":"红色史莱姆"}, {"o_type":"钥匙","color":"y_key"} , 0 ,1, 0,0 ,0 ,1 ,0 ,{"o_type":"monster","name":"小蝙蝠"},0], 
+			[{"o_type":"钥匙","color":"y_key"},{"o_type":"monster","name":"骷髅人"} , 0 ,1, 1, {"o_type":"door","color":"yellow"} ,1 ,1 ,0 ,1,0], 
+			[1,  {"o_type":"door","color":"yellow"}, 1 ,1, 0,{"o_type":"monster","name":"骷髅人"} ,0 ,1 , {"o_type":"钥匙","color":"y_key"},1,{"o_type":"monster","name":"红色史莱姆"}], 
+			[0, 0, 0 ,1, 1,1 ,0 ,1 , {"o_type":"钥匙","color":"y_key"},1,{"o_type":"monster","name":"小蝙蝠"}], 
+			[{"o_type":"monster","name":"绿色史莱姆"}, 1, 0 ,{"o_type":"monster","name":"小蝙蝠"}, {"o_type":"monster","name":"红色史莱姆"},{"o_type":"monster","name":"小蝙蝠"} ,0 ,1 ,{"o_type":"钥匙","color":"y_key"} ,1,{"o_type":"monster","name":"红色史莱姆"}], 
+			[{"o_type":"monster","name":"绿色史莱姆"}, 1, 1 ,1, 1,1 ,0 ,0 ,0 ,1,0],  
+			[0, 0, 0 ,0, 0,1 ,1 ,{"o_type":"door","color":"yellow"} ,1 ,1,0],  
+			[1, 1, 1, 1, {"o_type":"monster","name":"小蝙蝠"},1,{"o_type":"monster","name":"红色史莱姆"},0,{"o_type":"monster","name":"红色史莱姆"},1,0], 
+			[1, 0, 0 ,0, 0,1 , {"o_type":"宝物","name":"蓝宝石"} ,{"o_type":"monster","name":"小蝙蝠"} ,  {"o_type":"钥匙","color":"y_key"},1,0], 
+			[{"o_type":"下楼梯","goto":2,"location":[6,10]}, 0, 1 ,1, 1,1 ,{"o_type":"宝物","name":"红宝石"} ,{"o_type":"宝物","name":"蓝药"} ,{"o_type":"钥匙","color":"y_key"} ,1,{"o_type":"上楼梯","goto":4,"location":[16,10]}]
+                                         ],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 4,
+		"program":"f4_maze_create",
+		"bgm":"bgm1",
+		"scene": [
+			[0,{"o_type":"monster","name":"黑色史莱姆"} , 0 ,1 ,0, {"o_type": "NPC","name":"小偷","npc_type":2,"program":"artisan_2f"}, 0, 1, 0, {"o_type":"monster","name":"黑色史莱姆"},0], 
+			[{"o_type":"door","color":"yellow"}, 1, {"o_type":"door","color":"yellow"} ,1, 0,0 ,0 ,1 ,{"o_type":"door","color":"yellow"} ,1,{"o_type":"door","color":"yellow"}], 
+			[0, 1, 0 ,1, 1,{"o_type":"栅栏","flag":1} ,1 ,1 ,0 ,1,0], 
+			[0, 1, {"o_type":"monster","name":"骷髅人"} ,1, {"o_type":"monster","name":"大蝙蝠"}, {"o_type":"monster","name":"红蝙蝠"} , {"o_type":"monster","name":"大蝙蝠"} ,1 , {"o_type":"monster","name":"骷髅人"} ,1,0], 
+			[ {"o_type":"monster","name":"小蝙蝠"}, 1, {"o_type":"宝物","name":"红药"} ,1, {"o_type":"宝物","name":"蓝宝石"},{"o_type":"monster","name":"大蝙蝠"} ,{"o_type":"宝物","name":"蓝宝石"} ,1 ,{"o_type":"宝物","name":"红药"} ,1, {"o_type":"monster","name":"小蝙蝠"}], 
+			[ {"o_type":"monster","name":"小蝙蝠"}, 1, {"o_type":"宝物","name":"红药"} ,1, 1,{"o_type":"door","color":"red"} ,1 ,1 ,{"o_type":"宝物","name":"红药"} ,1,{"o_type":"monster","name":"小蝙蝠"}], 
+			[{"o_type":"monster","name":"红色史莱姆"}, 1, 0 ,1,{"o_type":"monster","name":"兽面人"},{"o_type":"monster","name":"初级卫兵"} ,{"o_type":"monster","name":"兽面人"} ,1 ,0 ,1,{"o_type":"monster","name":"红色史莱姆"}],  
+			[0, 1, 0 ,1,{"o_type":"宝物","name":"红宝石"} ,{"o_type":"monster","name":"兽面人"} ,{"o_type":"宝物","name":"红宝石"} ,1 ,0 ,1,0],  
+			[0, 1, 0, 1,1,{"o_type":"door","color":"blue"},1,1,0,1,0], 
+			[0, 1, 0 ,1, {"o_type":"钥匙","color":"y_key"},0 ,{"o_type":"钥匙","color":"y_key"} ,1 ,0 ,1,0], 
+			[{"o_type":"上楼梯","goto":5,"location":[6,10]}, 1, 0 ,{"o_type":"monster","name":"黑色史莱姆"}, 0,0 ,0 ,{"o_type":"monster","name":"黑色史莱姆"} ,0 ,1,{"o_type":"下楼梯","goto":3,"location":[16,10]}]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 5,
+		"bgm":"bgm1",
+		"scene": [
+			[ {"o_type":"钥匙","color":"special"}, 1, {"o_type":"宝物","name":"红药"} ,1 ,{"o_type":"宝物","name":"蓝药"},{"o_type":"monster","name":"初级法师"} , 0, 0, {"o_type":"monster","name":"初级法师"}, {"o_type":"钥匙","color":"y_key"},{"o_type":"钥匙","color":"b_key"}], 
+			[0, 1, {"o_type":"宝物","name":"红宝石"} ,1, {"o_type":"monster","name":"初级法师"},0 ,0 ,0 ,0 ,{"o_type":"monster","name":"初级法师"}, {"o_type":"钥匙","color":"y_key"}], 
+			[{"o_type":"monster","name":"大蝙蝠"}, 1, 0 ,1,{"o_type":"monster","name":"骷髅士兵"}, 0,1 ,1 ,{"o_type":"door","color":"yellow"} ,1,1], 
+			[0,{"o_type":"door","color":"yellow"},{"o_type":"monster","name":"初级法师" },1,{"o_type":"宝物","name":"铁盾"} ,{"o_type":"monster","name":"骷髅士兵"},1 ,0 ,{"o_type":"monster","name":"兽面人"} ,{"o_type":"monster","name":"骷髅士兵"}, {"o_type": "NPC","name":"红袍老人","id":2}], 
+			[{"o_type":"monster","name":"大蝙蝠"}, 1, 0 ,1, 1,1 ,1 ,0 ,0 ,0,{"o_type":"monster","name":"骷髅士兵"}], 
+			[{"o_type":"宝物","name":"红宝石"} , 1, 0 ,0, 0,{"o_type":"monster","name":"小蝙蝠"} ,{"o_type":"monster","name":"骷髅人"} ,0 ,0 ,0,0], 
+			[{"o_type":"宝物","name":"蓝宝石"}, 1, 1 ,{"o_type":"monster","name":"黑色史莱姆"}, 1,1 ,1 ,1 ,0 ,0,0],  
+			[0,{"o_type": "NPC","name":"蓝袍老人","id":2} ,1,{"o_type":"monster","name":"黑色史莱姆"} ,1, 0,0 ,0 ,{"o_type":"monster","name":"兽面人"} ,{"o_type":"monster","name":"初级卫兵"},0],  
+			[1, 1,1,{"o_type":"monster","name":"小蝙蝠"},1,{"o_type":"door","color":"yellow"},1,{"o_type":"door","color":"blue"},1,{"o_type":"door","color":"yellow"},1], 
+			[0, 0, 1 ,0, 1,{"o_type":"monster","name":"小蝙蝠"} ,1 , {"o_type":"宝物","name":"蓝宝石"},{"o_type":"door","color":"yellow"} ,0,1], 
+			[{"o_type":"下楼梯","goto":4,"location":[6,10]}, 0, {"o_type":"monster","name":"小蝙蝠"}  ,0, 0,0 ,1 , {"o_type":"钥匙","color":"y_key"} ,1 ,{"o_type":"上楼梯","goto":6,"location":[15,10]},1]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 6,
+		"bgm":"bgm1",
+		"scene": [
+			[{"o_type":"宝物","name":"小飞羽"}, {"o_type":"monster","name":"骷髅队长"}, 1, {"o_type":"宝物","name":"蓝宝石"},1,{"o_type":"钥匙","color":"y_key"}, {"o_type":"monster","name":"怪王"}, {"o_type":"宝物","name":"金块"}, 1, {"o_type":"宝物","name":"蓝药"},{"o_type":"宝物","name":"蓝药"}], 
+			[ {"o_type":"monster","name":"骷髅队长"},{"o_type":"钥匙","color":"y_key"} , 1 ,{"o_type":"宝物","name":"红宝石"}, 1,0 ,{"o_type":"钥匙","color":"y_key"} ,{"o_type":"monster","name":"怪王"} ,1 ,{"o_type":"monster","name":"石头怪人"},{"o_type":"宝物","name":"蓝药"}], 
+			[{"o_type":"钥匙","color":"y_key"},{"o_type":"monster","name":"骷髅队长"} , {"o_type":"door","color":"blue"} ,0, {"o_type":"door","color":"blue"},{"o_type":"monster","name":"红蝙蝠"} ,0,{"o_type":"钥匙","color":"y_key"} ,1 ,0,{"o_type":"monster","name":"石头怪人"}], 
+			[0, 0, 1 ,{"o_type":"monster","name":"初级卫兵"}, 1,0 ,0 ,0 ,1 ,{"o_type":"monster","name":"红衣法师"},1], 
+			[1, 1, 1 ,{"o_type":"door","color":"red"}, 1,1 ,1 ,1 ,1 ,{"o_type":"door","color":"yellow"},1], 
+			[0, 0, {"o_type":"monster","name":"高级法师"} ,0, {"o_type":"钥匙","color":"y_key"},{"o_type":"钥匙","color":"y_key"} ,{"o_type":"钥匙","color":"y_key"} ,0 ,{"o_type":"monster","name":"高级法师"} ,0,0], 
+			[0, 1, 1 ,1, 1,1 ,1 ,1 ,1 ,1,1],  
+			[0, 1, {"o_type":"monster","name":"大蝙蝠"} ,{"o_type":"door","color":"yellow"}, 0,0 ,0 ,0 ,0 ,0,1],  
+			[0, 1, {"o_type":"door","color":"yellow"}, 1, {"o_type":"door","color":"yellow"},1,1,1,1,0,1], 
+			[0, 1, {"o_type":"monster","name":"大蝙蝠"} ,1, 0,0 ,1 ,1 ,0 ,0,1], 
+			[0, 0, 0 ,1, {"o_type":"上楼梯","goto":7,"location":[11,11]},0 ,{"o_type":"door","color":"yellow"} ,{"o_type":"door","color":"yellow"} ,0 ,{"o_type":"下楼梯","goto":5,"location":[15,10]},1]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 7,
+		"bgm":"bgm1",
+		"scene": [
+			[ {"o_type":"上楼梯","goto":8,"location":[6,2]}, 0, 0 ,0 ,0, 0, 0, 0, 1, 1,1], 
+			[1, 1, 0 ,{"o_type":"monster","name":"红蝙蝠"}, 1,{"o_type":"door","color":"blue"} ,1 ,{"o_type":"monster","name":"骷髅队长"} ,0 ,1,1], 
+			[1, 0, {"o_type":"monster","name":"红蝙蝠"} ,{"o_type":"宝物","name":"蓝宝石"}, 1,{"o_type":"monster","name":"白衣武士"} ,1 ,{"o_type":"宝物","name":"红宝石"} ,{"o_type":"monster","name":"骷髅队长"} ,0,1], 
+			[0, 0, 1 ,1, 1,{"o_type":"栅栏","flag":0} ,1 ,1 ,1 ,0,0], 
+			[0, 0, {"o_type":"door","color":"blue"} ,{"o_type":"monster","name":"白衣武士"}, {"o_type":"栅栏","flag":1},{"o_type":"宝物","name":"十字架"} ,{"o_type":"栅栏","flag":0} ,{"o_type":"monster","name":"白衣武士"} ,{"o_type":"door","color":"blue"} ,0,0], 
+			[0, 1, 1 ,1, 1,{"o_type":"栅栏","flag":0} ,1 ,1 ,1 ,1,0], 
+			[0, 1, {"o_type":"宝物","name":"红药"} ,{"o_type":"宝物","name":"红宝石"}, 1,{"o_type":"monster","name":"白衣武士"} ,1 ,{"o_type":"宝物","name":"蓝宝石"} ,{"o_type":"宝物","name":"红药"} ,1,0],  
+			[0, 1, {"o_type":"钥匙","color":"y_key"} ,{"o_type":"宝物","name":"红药"}, 1, {"o_type":"door","color":"blue"},1 ,{"o_type":"宝物","name":"红药"} ,{"o_type":"钥匙","color":"y_key"} ,1,0],  
+			[0, 1, 1, {"o_type":"钥匙","color":"b_key"}, {"o_type":"钥匙","color":"b_key"},{"o_type":"宝物","name":"蓝药"},{"o_type":"钥匙","color":"b_key"},{"o_type":"钥匙","color":"b_key"},1,1,0], 
+			[0, 0, 1 ,1, 1, {"o_type":"door","color":"red"},1 ,1 ,1 ,0,0], 
+			[1, 0, 0 ,{"o_type":"door","color":"yellow"}, {"o_type":"下楼梯","goto":6,"location":[11,11]} ,0 ,0 ,{"o_type":"door","color":"yellow"} ,0 ,0,1]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 8,
+		"bgm":"bgm1",
+		"scene": [
+			[{"o_type":"下楼梯","goto":7,"location":[7,1]}, 1, 0 ,0 ,0, 0, 1, 0, {"o_type":"钥匙","color":"y_key"},{"o_type":"monster","name":"骷髅队长"} ,0], 
+			[0, 1, 0 ,1, 1,{"o_type":"door","color":"yellow"} ,1 ,{"o_type":"door","color":"yellow"} ,1 ,1,0], 
+			[0, 1, 0 ,1, 0,0 ,{"o_type":"door","color":"blue"} ,0 ,0 ,1,{"o_type":"宝物","name":"红宝石"}], 
+			[0, 1, 0 ,1,{"o_type":"monster","name":"麻衣法师"} ,1 ,1 ,1 ,{"o_type":"monster","name":"大蝙蝠"},1,{"o_type":"monster","name":"黑色史莱姆"}], 
+			[{"o_type":"monster","name":"大蝙蝠"}, 1, 0 ,1,{"o_type":"宝物","name":"红药"} ,1 ,{"o_type":"上楼梯","goto":9,"location":[12,4]} ,0 ,0 ,1,{"o_type":"monster","name":"黑色史莱姆"}], 
+			[{"o_type":"monster","name":"红蝙蝠"}, 1,{"o_type":"宝物","name":"蓝宝石"}  ,1, {"o_type":"宝物","name":"红药"},1 ,1 ,1 ,1 ,1,0], 
+			[{"o_type":"monster","name":"大蝙蝠"}, 1, {"o_type":"monster","name":"黑色史莱姆"} ,1, 0,0 ,0,1 ,0,{"o_type":"monster","name":"红蝙蝠"},0],  
+			[0, 1, {"o_type":"monster","name":"黑色史莱姆"} ,1, 1,1 ,{"o_type":"monster","name":"初级卫兵"} ,1 ,{"o_type":"door","color":"yellow"}  ,1,1],  
+			[0, 1, 0,  {"o_type":"monster","name":"骷髅队长"} , 0,1, {"o_type":"monster","name":"骷髅队长"} ,1,0,0,0], 
+			[0, 1, 1 ,1, {"o_type":"door","color":"yellow"},1 ,0 ,1 ,1 ,1,0], 
+			[0, 0, {"o_type":"monster","name":"麻衣法师"} ,0, 0,1 ,0 ,{"o_type":"monster","name":"怪王"} ,{"o_type":"monster","name":"白衣武士"} ,{"o_type":"monster","name":"怪王"},0]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 9,
+		"bgm":"bgm1",
+		"scene": [
+			[{"o_type":"宝物","name":"神秘轮盘"}, {"o_type":"钥匙","color":"y_key"}, 0 ,1 ,1, 1, 0, 0, 0, 1,0], 
+			[{"o_type":"钥匙","color":"y_key"}, 0,{"o_type":"monster","name":"兽面武士"}  ,{"o_type":"door","color":"yellow"}, 0,0 ,0 ,1 ,0 ,{"o_type":"door","color":"yellow"},{"o_type":"monster","name":"骷髅队长"}], 
+			[1, {"o_type":"door","color":"yellow"}, 1 ,1, 0,1 ,1 ,1 ,0 ,1,{"o_type":"钥匙","color":"y_key"}], 
+			[0, 0, 0 ,1, 0,1 ,0 ,0 ,0 ,1,{"o_type":"钥匙","color":"y_key"}], 
+			[0, 0, 0 ,{"o_type":"door","color":"red"}, 0,1 ,{"o_type":"下楼梯","goto":8,"location":[13,5]} ,1,0,1,{"o_type":"宝物","name":"红药"}], 
+			[1,{"o_type":"door","color":"blue"} , 1 ,1, 0,1 ,1 ,1 ,0 ,1,1], 
+			[{"o_type":"宝物","name":"蓝宝石"}, {"o_type":"monster","name":"红衣法师"}, {"o_type":"宝物","name":"红宝石"} ,1, {"o_type":"monster","name":"麻衣法师"},1 ,{"o_type":"上楼梯","goto":10,"location":[10,7]} ,1 ,0 ,1,{"o_type":"宝物","name":"红药"}],  
+			[1, {"o_type":"door","color":"yellow"}, 1 ,1, 0,0 ,0 ,{"o_type":"door","color":"yellow"} ,0 ,1,{"o_type":"钥匙","color":"y_key"}],  
+			[{"o_type":"monster","name":"骷髅队长"}, {"o_type":"宝物","name":"红药"}, {"o_type":"monster","name":"骷髅队长"}, 1,1,{"o_type":"door","color":"blue"} ,1,1,0,1,{"o_type":"钥匙","color":"y_key"}], 
+			[{"o_type":"钥匙","color":"b_key"}, {"o_type":"monster","name":"骷髅队长"},  {"o_type":"宝物","name":"红药"} ,1,{"o_type":"monster","name":"石头怪人"} ,{"o_type":"monster","name":"麻衣法师"} ,{"o_type":"monster","name":"石头怪人"} ,1 ,0 ,{"o_type":"door","color":"yellow"},{"o_type":"monster","name":"骷髅队长"}], 
+			[{"o_type":"宝物","name":"青锋剑"},{"o_type":"钥匙","color":"b_key"} , {"o_type":"monster","name":"骷髅队长"} ,{"o_type":"door","color":"yellow"},{"o_type":"宝物","name":"蓝药"} ,{"o_type":"monster","name":"石头怪人"},{"o_type":"宝物","name":"蓝药"} ,1 ,0 ,1,0]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 10,
+		"bgm":"bgm1",
+		"scene": [
+			[0, 1, 1 ,{"o_type":"宝物","name":"蓝宝石"} ,{"o_type":"monster","name":"兽面武士"}, 1, {"o_type":"monster","name":"兽面武士"}, {"o_type":"宝物","name":"红宝石"}, 1, 1,0], 
+			[0, 0, 1 ,1, {"o_type":"door","color":"yellow"},1 ,{"o_type":"door","color":"yellow"} ,1 ,1 ,0,{"o_type":"monster","name":"红衣法师"}], 
+			[0, 0, 0 ,0, 0,1 ,0 ,0 ,0 ,{"o_type":"monster","name":"红衣法师"},{"o_type":"宝物","name":"蓝药"} ], 
+			[0, 1, 0 ,1, 1,1 ,1 ,1 ,0 ,1,1], 
+			[{"o_type":"monster","name":"大蝙蝠"}, 1, 0 ,0,{"o_type":"钥匙","color":"y_key"} ,{"o_type":"钥匙","color":"y_key"},{"o_type":"钥匙","color":"y_key"} ,0 ,0 ,1,{"o_type":"钥匙","color":"y_key"}], 
+			[{"o_type":"monster","name":"红蝙蝠"}, 1, 0 ,1, 1,1 ,1 ,{"o_type":"door","color":"yellow"} ,1 ,1,{"o_type":"钥匙","color":"y_key"}], 
+			[{"o_type":"monster","name":"大蝙蝠"}, 1, 0 ,{"o_type":"栅栏","flag":1}, 0,{"o_type":"下楼梯","goto":9,"location":[12,8]} ,1 ,0 ,{"o_type":"door","color":"yellow"} ,{"o_type":"monster","name":"红蝙蝠"},0],  
+			[0, 1, 1 ,1, 1,1 ,1 ,{"o_type":"door","color":"yellow"}  ,1 ,1,0],  
+			[0, 1, {"o_type":"宝物","name":"红药"}, {"o_type":"宝物","name":"蓝宝石"},{"o_type":"宝物","name":"红宝石"},1,0,{"o_type":"monster","name":"红蝙蝠"},0,1,{"o_type":"钥匙","color":"y_key"}], 
+			[0, 1, {"o_type":"宝物","name":"红药"}, {"o_type":"宝物","name":"蓝宝石"},{"o_type":"宝物","name":"红宝石"},{"o_type":"door","color":"red"} , {"o_type":"monster","name":"麻衣法师"},1 ,{"o_type":"monster","name":"麻衣法师"} ,1,{"o_type":"钥匙","color":"y_key"}], 
+			[{"o_type":"上楼梯","goto":11,"location":[7,11]}, 1, {"o_type":"宝物","name":"红药"}, {"o_type":"宝物","name":"蓝宝石"},{"o_type":"宝物","name":"红宝石"},1 ,{"o_type":"钥匙","color":"b_key"} ,1 ,{"o_type":"钥匙","color":"b_key"} ,1,{"o_type":"宝物","name":"红药"}]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 11,
+		"bgm":"bgm1",
+		"scene": [
+			[{"o_type":"宝物","name":"红药"}, 1, {"o_type":"钥匙","color":"y_key"} ,1 ,{"o_type":"钥匙","color":"b_key"}, 1, {"o_type":"钥匙","color":"r_key"}, 1, {"o_type":"宝物","name":"蓝药"}, {"o_type":"宝物","name":"黄金盾"},{"o_type":"宝物","name":"蓝药"}], 
+			[{"o_type":"宝物","name":"红药"}, 1, {"o_type":"钥匙","color":"y_key"} ,1 ,{"o_type":"钥匙","color":"b_key"}, 1, {"o_type":"钥匙","color":"r_key"}, 1 , {"o_type":"monster","name":"冥卫兵"} , {"o_type":"monster","name":"高级卫兵"}, {"o_type":"monster","name":"冥卫兵"}], 
+			[{"o_type":"宝物","name":"红药"}, 1, {"o_type":"钥匙","color":"y_key"} ,1 ,{"o_type":"钥匙","color":"b_key"}, 1, {"o_type":"钥匙","color":"r_key"}, 1 ,0 , {"o_type":"monster","name":"冥卫兵"},0], 
+			[{"o_type":"door","color":"yellow"}, 1, {"o_type":"door","color":"yellow"} ,1, {"o_type":"door","color":"yellow"},1 ,{"o_type":"door","color":"yellow"} ,1 ,1 ,{"o_type":"door","color":"blue"},1], 
+			[0, 0, 0 ,0, 0,1 ,0 ,0 ,0 ,0,0], 
+			[{"o_type":"door","color":"yellow"}, 1, 1 ,{"o_type":"door","color":"blue"}, 1,1 ,1 ,{"o_type":"door","color":"blue"} ,1 ,1,{"o_type":"door","color":"yellow"}], 
+			[{"o_type":"宝物","name":"蓝宝石"}, 1, 0 ,{"o_type":"monster","name":"冥卫兵"},{"o_type":"宝物","name":"蓝药"},{"o_type":"monster","name":"双手剑士"} ,{"o_type":"宝物","name":"蓝药"} ,{"o_type":"monster","name":"冥卫兵"},0 ,1 ,{"o_type":"宝物","name":"红宝石"}],  
+			[{"o_type":"宝物","name":"蓝宝石"}, 1, {"o_type":"monster","name":"兽面武士"} ,1, 1,1 ,1 ,1 ,{"o_type":"monster","name":"兽面武士"} ,1,{"o_type":"宝物","name":"红宝石"}],  
+			[{"o_type":"宝物","name":"蓝宝石"}, 1, {"o_type":"monster","name":"兽面武士"} ,1,{"o_type":"商店","name":"高级商店","flag":1}, {"o_type":"商店","name":"高级商店","flag":2}, {"o_type":"商店","name":"高级商店","flag":3},1,{"o_type":"monster","name":"兽面武士"},1,{"o_type":"宝物","name":"红宝石"}], 
+			[1, 1, {"o_type":"door","color":"red"} ,1, {"o_type":"宝物","name":"红药"},0 ,{"o_type":"宝物","name":"红药"} ,1 ,{"o_type":"door","color":"red"} ,1,1], 
+			[{"o_type":"下楼梯","goto":10,"location":[6,10]}, 0, 0 ,0, 0,0 ,0 ,0 ,0 ,0,{"o_type":"上楼梯","goto":12,"location":[15,11]}]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 12,
+		"bgm":"bgm1",
+		"scene": [
+			[{"o_type":"NPC","name":"红袍老人","id":3}, {"o_type":"宝物","name":"蓝宝石"}, 1 ,0 ,{"o_type":"monster","name":"金卫士"}, {"o_type":"monster","name":"金队长"}, {"o_type":"monster","name":"金卫士"},0, 1, {"o_type":"宝物","name":"蓝药"} ,{"o_type":"宝物","name":"锄头"}], 
+			[{"o_type":"宝物","name":"红宝石"}, 0, 1 ,0, 1,{"o_type":"door","color":"yellow"} ,1 ,0 ,1 ,0,{"o_type":"宝物","name":"蓝药"}], 
+			[0, 0, 1 ,0, 1, {"o_type":"monster","name":"金队长"} ,1 ,0 ,1 ,0,0], 
+			[0,  {"o_type":"monster","name":"双手剑士"}, 1 ,0, 1, {"o_type":"钥匙","color":"y_key"} ,1 ,0 ,1 ,{"o_type":"monster","name":"灵武士"},0], 
+			[{"o_type":"monster","name":"双手剑士"}, {"o_type":"monster","name":"冥战士"}, 1 ,0, 1, {"o_type":"钥匙","color":"y_key"},1 ,0 ,1 ,{"o_type":"monster","name":"灵法师"},{"o_type":"monster","name":"灵武士"}], 
+			[1, {"o_type":"door","color":"blue"}, 1 ,0, 1,{"o_type":"宝物","name":"红药"} ,1 ,0 ,1 ,{"o_type":"door","color":"blue"},1], 
+			[0, 0, 0 ,0, 1,{"o_type":"宝物","name":"红药"} ,1 ,0 ,0 ,0,0], 
+			[1, 1, 1 ,0, 1,1 ,1 ,0 ,1 ,1,1],  
+			[{"o_type":"宝物","name":"蓝宝石"}, {"o_type":"monster","name":"双手剑士"}, {"o_type":"door","color":"yellow"} ,{"o_type":"monster","name":"冥卫兵"}, {"o_type":"monster","name":"冥卫兵"},{"o_type":"monster","name":"高级卫兵"} ,{"o_type":"monster","name":"冥卫兵"} ,{"o_type":"monster","name":"冥卫兵"} ,{"o_type":"door","color":"yellow"} ,{"o_type":"monster","name":"双手剑士"},{"o_type":"宝物","name":"红宝石"}],  
+			[1, 1, 1, 1, 1,{"o_type":"door","color":"blue"},1,1,1,1,1], 
+			[{"o_type":"上楼梯","goto":13,"location":[7,11]}, 0, 0 ,0, 0,0 ,0 ,0 ,0 ,0,{"o_type":"下楼梯","goto":11,"location":[15,11]}]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 13,
+		"bgm":"bgm1",
+		"scene": [
+			[0, {"o_type":"monster","name":"双手剑士"}, 0 ,0 ,0, 0, 0, 1, 0, {"o_type":"monster","name":"冥战士"},0], 
+			[0, 1, 1 ,1, 1,1 ,{"o_type":"door","color":"yellow"} ,1 ,0 ,1,0], 
+			[0, 1, 0 ,0,{"o_type":"monster","name":"冥卫兵"} ,0 ,0 ,1 ,0 ,1,0], 
+			[{"o_type":"宝物","name":"蓝药"}, 1,  {"o_type":"door","color":"red"},1, 1,1 ,0 ,1 ,0 ,1,0], 
+			[ {"o_type":"monster","name":"金卫士"}, 1, 0 ,0,  {"o_type":"monster","name":"冥战士"},1 , {"o_type":"monster","name":"冥卫兵"} ,1 ,{"o_type":"宝物","name":"红宝石"} ,1,0], 
+			[{"o_type":"monster","name":"金队长"}, 1, 0 ,{"o_type":"monster","name":"冥队长"},{"o_type":"栅栏","flag":0},1 ,{"o_type":"monster","name":"高级卫兵"} ,1 ,{"o_type":"宝物","name":"红宝石"} ,1,0], 
+			[{"o_type":"monster","name":"金卫士"}, 1, {"o_type":"monster","name":"冥战士"} ,{"o_type":"栅栏","flag":1}, {"o_type":"NPC","name":"蓝袍老人","id":3},1,{"o_type":"monster","name":"冥卫兵"} ,1 ,{"o_type":"宝物","name":"红宝石"} ,1,{"o_type":"宝物","name":"蓝宝石"}],  
+			[0, 1, 1 ,1, 1,1 ,0 ,1 ,0 ,1,{"o_type":"宝物","name":"蓝宝石"}],  
+			[0, {"o_type":"monster","name":"金卫士"}, 0, 1, 0,0,0,{"o_type":"monster","name":"冥战士"},0,1,{"o_type":"宝物","name":"蓝宝石"}], 
+			[1, 1, 0 ,1, 0,1 ,1 ,1 ,1 ,1,0], 
+			[{"o_type":"下楼梯","goto":12,"location":[7,11]}, 0 ,{"o_type":"door","color":"yellow"}, {"o_type":"宝物","name":"蓝药"} ,0,{"o_type":"上楼梯","goto":14,"location":[11,10]},1 ,{"o_type":"宝物","name":"大飞羽"} ,{"o_type":"monster","name":"冥队长"} ,{"o_type":"door","color":"yellow"},0]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 14,
+		"bgm":"bgm1",
+		"scene": [
+			[1, 0, {"o_type":"monster","name":"灵武士"} ,{"o_type":"钥匙","color":"special"} ,{"o_type":"上楼梯","goto":15,"location":[9,1]}, 0, 0, 0, 0, 0,1], 
+			[1, 0, {"o_type":"宝物","name":"蓝药"} ,1, 1,1 ,1 ,1 ,{"o_type":"宝物","name":"蓝药"} ,0,1], 
+			[1, 0, 1 ,1, 1,1 ,1 ,1 ,1 ,0,1], 
+			[1,  0, 1 ,1, 1, {"o_type":"宝物","name":"圣水"},1 ,1 ,1 ,0,1], 
+			[1,  0, 1 ,1, 1, {"o_type":"栅栏","flag":"1"},1 ,1 ,1 ,0,1], 
+			[1, 0, {"o_type":"宝物","name":"红药"} ,1, 1, {"o_type":"monster","name":"冥战士"},1 ,1 ,{"o_type":"宝物","name":"红药"} ,0,1], 
+			[1, 0, 2 ,2, 1,{"o_type":"monster","name":"冥队长"} ,1 ,2 ,2 ,0,1],  
+			[1, 0, 2 ,2, 1,{"o_type":"monster","name":"冥战士"} ,1 ,2 ,2 ,0,1],  
+			[1, 0, 2 ,2, 1,{"o_type":"door","color":"blue"} ,1 ,2 ,2 ,0,1], 
+			[1,{"o_type":"monster","name":"冥卫兵"}, {"o_type":"monster","name":"高级卫兵"}, {"o_type":"monster","name":"冥卫兵"} , {"o_type":"door","color":"blue"},0 ,{"o_type":"door","color":"blue"} ,{"o_type":"monster","name":"冥卫兵"}, {"o_type":"monster","name":"高级卫兵"}, {"o_type":"monster","name":"冥卫兵"},1], 
+			[1, 1, 1 ,1, 1, {"o_type":"下楼梯","goto":13,"location":[10,11]},1 ,1 ,1 ,1,1]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 15,
+		"bgm":"bgm1",
+		"scene": [
+			[0, 0, 0 ,0 ,{"o_type":"下楼梯","goto":14, "location":[11,1]}, 2, {"o_type":"上楼梯","goto":16,"location":[11,1]}, 0, 0, 0,0], 
+			[0, 2, 2 ,2, 2,2 ,2 ,2 ,2 ,2,0], 
+			[0, 2, 2 ,1, 1,1 ,1 ,1 ,2 ,2,0], 
+			[0, 2, 1 ,1,{"o_type":"NPC","name":"蓝袍老人","id":4} ,1 ,{"o_type":"NPC","name":"红袍老人","id":4} ,1 ,1 ,2,0], 
+			[0, 2, 1 ,1,{"o_type":"宝物","name":"蓝宝石"} ,1 ,{"o_type":"宝物","name":"蓝宝石"} ,1 ,1 ,2,0], 
+			[0, 2, 1 ,1,{"o_type":"宝物","name":"红宝石"} ,1 ,{"o_type":"宝物","name":"红宝石"} ,1 ,1 ,2,0], 
+			[0, 2, 2 ,1, 0,1 ,0 ,1 ,2 ,2,0],  
+			[0, 2, 2 ,1, {"o_type":"door","color":"yellow"},1 ,{"o_type":"door","color":"yellow"} ,1 ,2 ,2,0],  
+			[0, 2, 2, 2, 0,0,0,2,2,2,0], 
+			[0, 2, 2 ,2, 2,{"o_type":"door","color":"red"} ,2 ,2 ,2 ,2,0], 
+			[0, 0, 0 ,0, 0,0 ,0 ,0 ,0 ,0,0]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": 16,
+		"bgm":"bgm1",
+		"scene": [
+			[2, 2, 2 ,2 ,2, 0,{"o_type":"下楼梯","goto":15, "location":[13,1]} , 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,2, 0,2 , 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,2, 0,2 , 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,1,{"o_type":"door","color":"red"} ,1 , 2, 2, 2,2], 
+			[2, 2, 2 ,1, 1,0 ,1 ,1 ,2 ,2,2], 
+			[2, 2, 2 ,1, 1,{"o_type":"monster","name":"红衣魔王"} ,1 ,1 ,2 ,2,2], 
+			[2, 2, 2 ,1, 1,0 ,1 ,1 ,2 ,2,2],  
+			[2, 2, 2 ,1, 1,{"o_type":"上楼梯","goto":17, "location":[11,9]} ,1 ,1 ,2 ,2,2],  
+			[2, 2, 2 ,2 ,1,1,1 , 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,2, 2,2 , 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,2, 2,2 , 2, 2, 2,2]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true
+		}
+	},
+	{
+		"floor": "17",
+		"bgm":"bgm0",
+		"floor": 0,
+		"scene": [
+			[2, {"o_type":"monster","name":"灵武士2"}, {"o_type":"monster","name":"冥队长2"},0 ,0, 0, 0, 0, 0, 0,{"o_type":"monster","name":"灵武士2"}], 
+			[2, {"o_type":"monster","name":"冥队长2"}, 2 ,2, 2,2 ,2 ,2 ,2 ,2,0], 
+			[2, 0, 2 ,{"o_type":"monster","name":"灵武士2"}, 0,0 ,0 ,0 ,0 ,0,{"o_type":"monster","name":"灵武士2"}], 
+			[2, 0, 2 ,0, 2,2 ,2 ,2 ,2 ,2,2], 
+			[2, 0, 2 ,0, 2,{"o_type":"monster","name":"灵武士2"} ,0 ,0 ,0 ,{"o_type":"monster","name":"灵武士2"},2], 
+			[2, 0, 2 ,{"o_type":"monster","name":"灵武士2"}, 0,0 ,2 ,2 ,2 ,0,2], 
+			[2, 0, 2 ,2, 2,2 ,2 ,{"o_type":"monster","name":"灵武士2"} ,0 ,{"o_type":"monster","name":"灵武士2"},2],  
+			[2, {"o_type":"monster","name":"冥队长2"}, 2 ,2, 2, {"o_type":"下楼梯","goto":16, "location":[11,7]},2 ,0 ,2 ,2,2], 
+			[2, {"o_type":"monster","name":"灵武士2"}, {"o_type":"monster","name":"冥队长2"} ,0, {"o_type":"monster","name":"影子战士"},0 ,2 ,{"o_type":"monster","name":"灵武士2"} ,0 ,0,{"o_type":"monster","name":"灵武士2"}],  
+			[2, 2, 2, 2, 2,2,2,2,2,2,0], 
+			[{"o_type":"上楼梯","goto":18, "location":[7,11]},0, {"o_type":"monster","name":"影子战士"} , 0 ,0, 0, 0 ,0 ,0 ,0,{"o_type":"monster","name":"灵武士2"} ]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true,
+			"from_lower": [7,13]
+		}
+	},
+	{
+		"floor": "18",
+		"bgm":"bgm0",
+		"floor": 0,
+		"scene": [
+			[2, 2, 2 ,2 ,2, 2, 2, 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,2, 2, 2, 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,2, 2, 2, 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,1, 1, 1, 2, 2, 2,2], 
+			[2, 2, 2 ,1 ,1,{"o_type":"NPC","name":"公主","status":"normal"} , 1, 1, 2, 2,2], 
+			[2, 2, 2 ,1 ,1,{"o_type":"栅栏","flag":1} , 1, 1, 2, 2,2], 
+			[2, 2, 2 ,1 ,1,{"o_type":"door","color":"red"} , 1, 1, 2, 2,2],  
+			[2, 2, 2 ,2 ,1,{"o_type":"door","color":"red"} , 1, 2, 2, 2,2],  
+			[2, 2, 2 ,2 ,2, 2, 2, 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,2, 2, 2, 2, 2, 2,2], 
+			[{"o_type":"下楼梯","goto":17, "location":[7,11]}, 0, 0 ,0, 0,0 ,0 ,0 ,0 ,0,0]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true,
+			"from_lower": [7,13]
+		}
+	},
+	{
+		"name": "19",
+		"bgm":"bgm0",
+		"floor": 0,
+		"scene": [
+			[0, 0, 0 ,0 ,0, 0, 0, 0, 0, 0,0], 
+			[0, 2, 0 ,2, 2,2 ,2 ,2 ,0 ,2,0], 
+			[0, 2, 0 ,2, 2,2 ,2 ,2 ,0 ,2,0], 
+			[0, 2, 0 ,2, 2, {"o_type":"上楼梯","goto":20, "location":[11,5]},2 ,2 ,0 ,2,0], 
+			[0, 2, 0 ,2, 2,0 ,2 ,2 ,0 ,2,0], 
+			[0, 2,{"o_type":"monster","name":"红衣魔王1"}  ,2, 2,0 ,2 ,2 ,{"o_type":"monster","name":"红衣魔王1"} ,2,0], 
+			[0, 2, {"o_type":"栅栏","flag":1} ,2, 2,{"o_type":"NPC","name":"冥灵魔王","status":"normal"} ,2 ,2 ,{"o_type":"栅栏","flag":1} ,2,0],  
+			[0, 2, {"o_type":"宝物","name":"星光神剑"}  ,2, 2,0 ,2 ,2 ,{"o_type":"宝物","name":"星光神盾"} ,2,0],  
+			[0, 2, 2 ,2, 2,0 ,2 ,2 ,2 ,2,0], 
+			[0, 2, 2 ,2, 2,0 ,2 ,2 ,2 ,2,0], 
+			[0, 0, 0 ,0, 0,0 ,0 ,0 ,0 ,0, {"o_type":"下楼梯","goto":18, "location":[15,11]}]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true,
+			"from_lower": [7,13]
+		}
+	},
+	{
+		"name": "20",
+		"bgm":"bgm0",
+		"floor": 0,
+		"scene": [
+			[{"o_type":"monster","name":"影子战士"} , {"o_type":"宝物","name":"红宝石"} , {"o_type":"monster","name":"白衣武士"}  , {"o_type":"宝物","name":"红药"} ,{"o_type":"monster","name":"冥队长2"}, {"o_type":"钥匙","color":"r_key"}, {"o_type":"monster","name":"冥队长2"},  {"o_type":"宝物","name":"红药"}, {"o_type":"monster","name":"白衣武士"} ,  {"o_type":"宝物","name":"红宝石"},{"o_type":"monster","name":"影子战士"}], 
+			[ {"o_type":"宝物","name":"蓝药"}, 2, {"o_type":"钥匙","color":"y_key"} ,2, {"o_type":"钥匙","color":"b_key"},2 ,{"o_type":"钥匙","color":"b_key"} ,2 ,{"o_type":"钥匙","color":"y_key"} ,2, {"o_type":"宝物","name":"蓝药"}], 
+			[2, {"o_type":"宝物","name":"蓝宝石"}, {"o_type":"monster","name":"白衣武士"} ,0, {"o_type":"monster","name":"灵武士2"} ,0 ,{"o_type":"monster","name":"灵武士2"} ,0 ,{"o_type":"monster","name":"白衣武士"} , {"o_type":"宝物","name":"蓝宝石"},2], 
+			[ {"o_type":"宝物","name":"红药"}, 2, {"o_type":"钥匙","color":"y_key"} ,2, 0, {"o_type":"下楼梯","goto":19, "location":[11,5]},0 ,2 ,{"o_type":"钥匙","color":"y_key"} ,2, {"o_type":"宝物","name":"红药"}], 
+			[{"o_type":"monster","name":"冥队长2"},{"o_type":"钥匙","color":"b_key"} , {"o_type":"monster","name":"灵武士2"} ,0, 0,0 ,0 ,0 ,{"o_type":"monster","name":"灵武士2"} ,{"o_type":"钥匙","color":"b_key"},{"o_type":"monster","name":"冥队长2"}], 
+			[{"o_type":"钥匙","color":"r_key"}, 2, 0 ,2, 0,2 ,0 ,2 ,0 ,2,{"o_type":"钥匙","color":"r_key"}], 
+			[{"o_type":"monster","name":"冥队长2"},{"o_type":"钥匙","color":"b_key"} , {"o_type":"monster","name":"灵武士2"} ,0, 0,0 ,0 ,0 ,{"o_type":"monster","name":"灵武士2"} ,{"o_type":"钥匙","color":"b_key"},{"o_type":"monster","name":"冥队长2"}],  
+			[{"o_type":"宝物","name":"红药"}, 2, {"o_type":"钥匙","color":"y_key"} ,2, 0, {"o_type":"上楼梯","goto":21, "location":[11,6]},0 ,2 ,{"o_type":"钥匙","color":"y_key"} ,2, {"o_type":"宝物","name":"红药"}],  
+			[2, {"o_type":"宝物","name":"蓝宝石"}, {"o_type":"monster","name":"白衣武士"} ,0, {"o_type":"monster","name":"灵武士2"} ,0 ,{"o_type":"monster","name":"灵武士2"} ,0 ,{"o_type":"monster","name":"白衣武士"} , {"o_type":"宝物","name":"蓝宝石"},2], 
+			[{"o_type":"宝物","name":"蓝药"}, 2, {"o_type":"钥匙","color":"y_key"} ,2, {"o_type":"钥匙","color":"b_key"},2 ,{"o_type":"钥匙","color":"b_key"} ,2 ,{"o_type":"钥匙","color":"y_key"} ,2, {"o_type":"宝物","name":"蓝药"}], 
+			[{"o_type":"monster","name":"影子战士"} , {"o_type":"宝物","name":"红宝石"} , {"o_type":"monster","name":"白衣武士"}  , {"o_type":"宝物","name":"红药"} ,{"o_type":"monster","name":"冥队长2"}, {"o_type":"钥匙","color":"r_key"}, {"o_type":"monster","name":"冥队长2"},  {"o_type":"宝物","name":"红药"}, {"o_type":"monster","name":"白衣武士"} ,  {"o_type":"宝物","name":"红宝石"},{"o_type":"monster","name":"影子战士"}]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true,
+			"from_lower": [7,13]
+		}
+	},
+	{
+		"name": "21",
+		"bgm":"bgm0",
+		"floor": 0,
+		"scene": [
+			[2, 2, 2 ,2 ,2, 2, 2, 2, 2, 2,2], 
+			[2, 2, 0 ,0, 2,{"o_type":"NPC","name":"冥灵魔王","status":"rage"} ,2 ,0 ,0 ,2,2], 
+			[2, 0, 0 ,2, 2,{"o_type":"monster","name":"灵法师"} ,2 ,2 ,0 ,0,2], 
+			[2, 0, 0 ,0, 2,{"o_type":"monster","name":"灵法师"} ,2 ,0 ,0 ,0,2], 
+			[2, 2, 0 ,0, 0,0 ,0 ,0 ,0 ,2,2], 
+			[2, 2, 0 ,0, 0,0 ,0 ,0 ,0 ,2,2], 
+			[2, 2, 2 ,0, 0,2 ,0 ,0 ,2 ,2,2],  
+			[2, 2, 2 ,2 , {"o_type":"栅栏","flag":0}, {"o_type":"下楼梯","goto":20, "location":[15,11]}, {"o_type":"栅栏","flag":0}, 2, 2, 2,2],  
+			[2, 2, 2 ,2 ,2, 2, 2, 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,2, 2, 2, 2, 2, 2,2], 
+			[2, 2, 2 ,2 ,2, 2, 2, 2, 2, 2,2]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true,
+			"from_lower": [7,13]
+		}
+	},
+	{
+		"name": "22",
+		"bgm":"bgm0",
+		"floor": 0,
+		"scene": [
+			[3, 3, 3 ,3 ,3, 3, 3, 3, 3, 3,3], 
+			[3, 3, 3 ,3 ,0, 0, 0, 3, 3, 3,3], 
+			[3, 3, 3 ,3 ,0,0, 0, 3, 3, 3,3], 
+			[3, 3, 3 ,3 ,0,  {"o_type":"NPC","name":"公主","status":"evil"}, 0, 3, 3, 3,3], 
+			[3, 3, 3 ,3 ,3, 0, 3, 3, 3, 3,3], 
+			[3, 3, 0 ,0 ,0, 0, 0, 0, 0, 3,3], 
+			[3, 3, 3 ,3 ,3, 0, 3, 3, 3, 3,3],  
+			[3, 3, 3 ,0 ,0, 0, 0, 0, 3, 3,3],  
+			[3, 3, 3 ,3 ,3, 0, 3, 3, 3, 3,3], 
+			[3, 3, 3 ,3 ,0, 0, 0, 3, 3, 3,3], 
+			[3, 3, 3 ,3 ,3, 0, 3, 3, 3, 3,3]
+		],
+		"config": {
+			"allow_teleport_to": true,
+			"allow_teleport_out": true,
+			"from_lower": [7,13]
+		}
+	}
+]
+}
