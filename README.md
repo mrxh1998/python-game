@@ -1,7 +1,5 @@
 # python-game
 python game magic_tower
-# python-game
-python game magic_tower
 用python的pygame模块做的一个小游戏
 地图和怪物数值以及素材来自于魔塔V1.12
 
